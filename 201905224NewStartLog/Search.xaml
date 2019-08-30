@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="_201905224NewStartLog.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_201905224NewStartLog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAltLowAcrylicWindowBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="选择搜索方式"
+                   Grid.Column="1"
+                   FontSize="36"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   />
+        <Button Name="SerachId"
+                Click="Serachid_Click"
+                Height="250"
+                Width="300"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center">
+            <StackPanel 
+                        Height="250"
+                        Width="300"
+                        Background="LightSteelBlue">
+            
+                <Grid HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Height="250"
+                      Width="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                           Text="精确搜索"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           FontSize="36"
+                           Margin="0,50,0,50"/>
+                    <TextBlock Grid.Row="1"
+                           FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE71E;"
+                           FontSize="36"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,15,0,15"/>
+                </Grid>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="2"
+                Grid.Column="3"
+                Name="SearchItem"
+                Click="SearchItem_Click"
+                Height="250"
+                Width="300">
+            <StackPanel 
+                        Background="LightGreen">
+                <Grid HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Height="250"
+                      Width="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                           Text="条件搜索"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           FontSize="36"
+                           Margin="0,50,0,50"/>
+                    <TextBlock Grid.Row="1"
+                           FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE71E;"
+                           FontSize="36"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="0,15,0,15"/>
+                </Grid>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>

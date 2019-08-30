@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="_201905224NewStartLog.Welcome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_201905224NewStartLog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAltLowAcrylicWindowBrush}">
+<!--这个页面可以添加一个触发器，全屏时，就用大图标，未全屏时小于一个尺寸就用小尺寸-->
+    <Grid Name="Picturemine">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="WelcomeText"
+                   Text="欢迎使用"
+                   Grid.Column="1"
+                   FontSize="36"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+        <StackPanel Grid.Column="1"
+                   Grid.Row="1"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   >
+            <Image Source="Assets/welcomePicture.png"
+                   Height="300"
+                   Width="300"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2"
+                    Grid.Row="2">
+            <TextBlock Text="作者：张金龙"
+                       Name="zuozhe"
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Right"
+                       />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--这个文件是语音控制的必要文件-->
+<VoiceCommand xmlns="http://schemas.microsoft.com/voicecommand/1.1">
+<CommandSet xml:lang="zh-cn" Name="ExampleAppCommandSet_zh-cn">
+  <CommandPrefix> 哔哩哔哩, </CommandPrefix>
+  <Example> 刷新列表 </Example>
+  
+  
+  <Command Name="刷新列表">
+    <Example> 刷新列表  </Example>
+    <ListenFor> 刷新{a} </ListenFor>
+    <ListenFor> Find name </ListenFor>
+    <Feedback> 看看结果吧 </Feedback>
+    <Navigate/>
+  </Command>
+</CommandSet>
+  
+  
+</VoiceCommand>

@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="_201905224NewStartLog.Delete"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_201905224NewStartLog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAltLowAcrylicWindowBrush}">
+
+    <Grid>
+        <TextBlock Text="信息删除页面,这个页面直接加一个精确搜索，如果有能力的话就加跳转"
+                   FontSize="36"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+    </Grid>
+</Page>
